@@ -1,0 +1,599 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  background-color: black;
+
+}
+
+body {
+  margin: 0;
+}
+
+.page1 {
+  background-image: url("../images/5073414.jpg");
+  background-attachment: fixed;
+  background-color: black;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+  height: 100%;
+}
+
+.containt {
+  clear: left;
+}
+
+.containdiv div {
+  border: 1px solid white;
+  height: 200px;
+  min-width: 17.5%;
+  float: left;
+}
+
+.left {
+  border: 1px solid white;
+  height: 600px;
+  width: 15%;
+  float: left;
+  justify-content: left;
+  text-align: left;
+}
+
+
+.right {
+  border: 1px solid white;
+  height: 600px;
+  width: 15%;
+  float: right;
+}
+
+.containt .left ul {
+  list-style-type: none;
+
+}
+
+div.left ul li p {
+
+  text-align: left;
+  color: #0082e6;
+}
+
+div.containt div.left ul li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: left !important;
+  margin: 5px;
+
+}
+
+div.containt div.left ul li {
+  padding-top: 10px;
+}
+
+div.containt div.left {
+  float: left;
+  display: flex;
+
+}
+
+div.containt div.left ul li a:hover {
+  text-decoration: underline;
+  color: #0082e6;
+  cursor: pointer;
+}
+
+div.containt div.left ul li a:active {
+  color: red;
+}
+
+div.containt #div1 {
+  
+}
+div.containt div.cc{
+  display: flex;
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-position: center;
+}
+
+
+div.containt #div1:hover {
+  
+  
+  transition: all 1s;
+
+  
+  
+}
+
+div.containt #div1  a{
+  color: #0ef;
+font-size: 30px;
+visibility: hidden;
+}
+div.containt #div1:hover  a{
+  text-decoration: underline;
+  cursor: pointer;
+  visibility: visible;
+}
+div.containt div.cc a {  visibility: visible;}
+
+.contacton label {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.contacton label span {
+  font-size: 30px;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 1px 1px 5px aqua;
+
+}
+
+@keyframes c {
+  0% {
+    box-shadow: 1px 1px 5px aqua;
+  }
+
+  25% {
+    box-shadow: 1px -1px 5px aqua;
+  }
+
+  50% {
+    box-shadow: -1px -1px 5px aqua;
+  }
+
+  75% {
+    box-shadow: -1px 1px 5px aqua;
+  }
+
+  100% {
+    box-shadow: 1px 1px 5px aqua;
+  }
+}
+
+
+.contacton label span:hover {
+  animation-name: c;
+  animation-duration: 1s;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+  cursor: pointer;
+  border-radius: 50%;
+
+}
+
+.contacton label.w span:hover {
+  color: green;
+}
+
+.contact {
+  padding-top: 10px;
+  clear: left;
+  background-color: #800000;
+  width: 100%;
+  height: 300px;
+}
+
+.contacton label {
+  color: white;
+  font-size: 25px;
+}
+
+.contact label {
+  color: white;
+}
+
+table {
+  padding-left: 15%;
+}
+
+/* Topnav -----------------------------------------------------------*/
+.topnav {
+
+  overflow: visible;
+  align-items: center;
+
+}
+
+ul {
+  float: right;
+  transition: all .5s;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+.topnav ul li {
+
+  color: white;
+  font-size: 25px;
+
+  list-style-type: none;
+  margin: 0 20px;
+  display: inline-block;
+  position: relative;
+  padding: 14px 16px;
+
+}
+
+.topnav ul li.mainBarItem::after {
+  content: "";
+
+
+  height: 3px;
+  width: 0;
+  background-color: #0ef;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border: -7px;
+  transition: 0.5s;
+
+}
+
+.topnav ul li.mainBarItem:hover::after {
+  width: 100%;
+}
+
+.box1 {
+  width: 70%;
+  height: 8%;
+  box-sizing: border-box;
+
+}
+
+/* ==================iconbar og dropdown============== */
+
+.bars {
+
+  position: relative;
+  display: inline-block;
+  float: right;
+}
+
+.topnav .bars a i:hover {
+  color: aqua;
+
+}
+
+.topnav .bars a i {
+  font-size: 30px;
+  float: right;
+  line-height: 80px;
+  color: #fff;
+  margin-right: 20px;
+  display: none;
+}
+
+.dropDownContent {
+  display: none;
+  position: absolute;
+  background-color: #2c3e50;
+  margin: auto;
+  z-index: 1;
+  top: 35%;
+  /* Position the dropdown below the icon */
+  right: 100%;
+  /* Align the dropdown with the left side of the icon */
+  width: 120px;
+  /* Set the width of the dropdown as needed */
+
+
+}
+
+.dropDownContent a {
+  padding: 12px 16px;
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+
+
+.dropDownContent a:hover {
+  background-color: darkgray;
+}
+
+.bars:hover .dropDownContent {
+  display: block;
+
+}
+
+/* ===================logo========================= */
+label.logo {
+  display: inline-block;
+  font-size: 30px;
+  color: white;
+  line-height: 80px;
+  padding-left: 10px;
+}
+
+/* ------------------------------------------ */
+.searchDiv {
+  float: right;
+  padding: 14px 16px;
+}
+
+.srch {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  width: 200px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid red;
+  color: #fff;
+  border-right: none;
+  font-size: 16px;
+  float: left;
+  padding: 10px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.btn {
+  width: 100px;
+  height: 40px;
+  background-color: red;
+  border: 2px solid red;
+  color: #fff;
+  font-size: 15px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+#search {
+  height: 30px;
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+.searchDiv:focus {
+  outline: none;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+
+
+
+
+/* ----------websitename---------------- */
+#websiteName {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  float: left;
+}
+
+.welcome-container {
+  width: 65%;
+  float: left;
+  padding-top: 10em;
+  background-color: none;
+  color: #fff;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.welcome-container p {
+  font-size: 1.2em;
+  line-height: 1.6em;
+}
+
+
+/* login design */
+.wrapper {
+  position: relative;
+
+  top: 15%;
+  left: 3%;
+  width: 400px;
+  height: 500px;
+  background: #000;
+  box-shadow: 0 0 50px #0ef;
+  border-radius: 20px;
+  padding: 40px;
+
+  overflow: hidden;
+}
+
+.wrapper:hover {
+  animation: animate 1s linear infinite;
+}
+
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: 1s ease-in-out;
+}
+
+.wrapper.active .form-wrapper.sign-in {
+  transform: translateY(-450px);
+}
+
+.wrapper .form-wrapper.sign-up {
+  position: absolute;
+  top: 450px;
+  left: 0;
+}
+
+.wrapper.active .form-wrapper.sign-up {
+  transform: translateY(-450px);
+}
+
+h2 {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+}
+
+.input-group {
+  position: relative;
+  margin: 30px 0;
+  border-bottom: 2px solid #fff;
+}
+
+.input-group label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.input-group input {
+  width: 320px;
+  height: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 0 5px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.input-group input:focus~label,
+.input-group input:valid~label {
+  top: -5px;
+}
+
+.remember {
+  margin: -5px 0 15px 5px;
+}
+
+.remember label {
+  color: #fff;
+  font-size: 14px;
+}
+
+.remember label input {
+  accent-color: #0ef;
+}
+
+button {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  background: #0ef;
+  box-shadow: 0 0 10px #0ef;
+  font-size: 16px;
+  color: #000;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+}
+
+.signUp-link {
+  font-size: 14px;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.signUp-link p {
+  color: #fff;
+}
+
+.signUp-link p a {
+  color: #0ef;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signUp-link p a:hover {
+  text-decoration: underline;
+}
+
+@keyframes animate {
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+@media only screen and (max-width:850px) {
+  .wrapper {
+    margin: auto;
+    position: relative;
+    display: none;
+
+  }
+
+  .welcome-container {
+    clear: right;
+  }
+
+  .containt {
+    visibility: hidden;
+  }
+
+  .searchDiv {
+    display: none;
+  }
+
+  .topnav .bars a.icon i {
+    display: block;
+  }
+
+  ul {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: 0;
+    text-align: center;
+
+  }
+
+  .topnav ul li {
+    display: block;
+  }
+
+  .topnav ul li a {
+    font-size: 20px;
+  }
+
+  a:hover,
+  a:active {
+    background: none;
+    color: #0082e6;
+  }
+}
+
+/* li img{
+    height: 30px;
+    width: 30px;
+    background-color: none;
+}
+img {
+    -webkit-mask-image: url('../images/pexels-markus-spiske-1089438.jpg'); 
+    mask-image: url('../images/pexels-markus-spiske-1089438.jpg'); 
+} 
+*/

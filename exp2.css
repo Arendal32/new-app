@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.left {
+    position: fixed;
+    
+    display: flex;
+    float:left;
+    border:1px solid white;
+    height: 100%;
+    width: 15%;
+}
+.left ul li{
+    margin: 10px;
+    margin-left: 5px;
+}
+.left ul li a{
+margin: 10px;
+color: white;
+font-size: 18px;
+}
+.left ul li a:hover{
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+}
+div.n{
+    
+    float:left;
+    width:84.9%;
+    height: 30vh;
+    border:1px solid white;
+}
